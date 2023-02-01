@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #332f2e, #9d9799, #b157de, #6f00ff);
+  background-size: 10000% 10000%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  /* background: linear-gradient(to right, rgb(69, 69, 69), rgb(140, 140, 140)); */
+}
+.mywidth {
+  width: 420px;
+  height: 280px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
